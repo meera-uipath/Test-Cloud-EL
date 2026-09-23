@@ -1,0 +1,76 @@
+site_name: Agentic Testing Workshop
+site_url: https://meera-uipath.github.io/Test-Cloud-EL/
+site_description: Participant's guide for the UiPath Agentic Testing Workshop — build a chain of coding-agent-built agents for risk assessment, test planning, and test execution against the BenefitConnect demo app.
+site_author: Meera Kannan
+
+theme:
+  name: material
+  logo: assets/images/Partner Success Logo.png
+  favicon: assets/images/favicon.png
+  font:
+    text: Inter
+  palette:
+    scheme: default
+    primary: deep orange
+    accent: orange
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - toc.integrate
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.tabs.link
+
+hooks:
+  - hooks/split_cols.py
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Prerequisites: prerequisites.md
+  - "Module 1 — Change Risk Assessor":
+    - Build the Change Risk Assessor Agent: module-1-change-risk-assessor.md
+  - "Module 2 — Orchestrate & Execute":
+    - Overview: module-2/index.md
+    - 1. Walk the Maestro process: module-2/1-walk-the-maestro-process.md
+    - 2. Inspect the Risk Review Action App: module-2/2-risk-review-action-app.md
+    - 3. Build the Test Planner Agent: module-2/3-test-planner-agent.md
+    - 4. Register and run in Test Manager: module-2/4-test-manager.md
+    - 5. Run both scenarios end-to-end: module-2/5-run-end-to-end.md
+  - Optional Module:
+    - Build the Enrollment Wizard Test Robot: optional-module-rpa-robot.md
+  - You did it!: you-did-it.md
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/extra.js
+
+extra:
+  generator: false
