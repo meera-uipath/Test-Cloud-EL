@@ -241,7 +241,12 @@ Layer / governance controls, Test Cloud / Test Scout (the video's own product su
 ## Open items / not yet decided
 
 - [ ] Total workshop time budget — determines whether the Optional Module fits in the same session or needs its own
-- [ ] Dry-run the `uip tm` sequence end-to-end before finalizing Module 2 content (Preview status, may shift)
+- [x] ~~Dry-run the `uip tm` trigger/wait/report sequence~~ — **confirmed** via a real recorded session
+      (Claude Code + `uipath-test` skill: trigger a named test set, wait, triage failures by run history
+      into chronic-defect vs. regression/environment, generate a GO/NO-GO PDF report with a Test-Manager
+      provenance footer). Still unverified: creating new test cases from the test-planner-agent's output
+      (`testcases create`, `steps add`, `link-automation` with per-scenario runtime inputs) — see Module 2
+      in the guide for the exact confirmed commands and report template now adopted from this reference run.
 - [ ] Verify exact `uipath-rpa` scaffold/publish CLI syntax against live `uip --help` before finalizing the Optional Module
 - [ ] Build/confirm the pre-made Maestro process and pre-built Action App instructor assets
 - [ ] Decide whether to explore the `uipath-test` skill's Playwright packaging path as a lighter-weight

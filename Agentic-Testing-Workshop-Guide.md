@@ -216,29 +216,49 @@ Return output matching this structure:
 
 Publish and run this agent the same way as Module 1 (`uip solution upload`, run in Studio Web).
 
-### 4. ⚠️ Register and run the plan in Test Manager
+### 4. Trigger, wait, and report — a verified pattern
 
-**This section uses UiPath Test Manager (`uip tm`), a Preview capability. The exact command outputs below are
-based on the `uipath-test` skill's documented command surface, not a verified end-to-end run — confirm each
-step works in your tenant before delivering this live, and adjust if `link-automation` doesn't support
-per-scenario runtime inputs the way assumed here.**
+This step doesn't need a bespoke reporting agent. A single natural-language instruction to your coding agent,
+with the `uipath-test` skill loaded, is enough — this exact pattern has been confirmed against a real recorded
+session:
 
-Ask your coding agent to take `out_TestPlanJSON` and:
-
-1. Create or reuse a Test Manager project: `uip tm project list --filter <name>` then `uip tm project create` if needed
-2. For each scenario, create a test case and steps:
 ```
-uip tm testcases create --project-key <KEY> --name <scenario title>
-uip tm testcases steps add --project-key <KEY> --test-case-id <id> --description <action>
+Trigger the <test set name> test set of Project <KEY> in Test Manager and
+wait for it to finish. Once finished, create a release manager report in
+PDF for that test set — I need a go/no-go summary before the sign-off
+meeting. Highlight the failures blocking the release.
 ```
-3. Group them into a test set: `uip tm testsets create --project-key <KEY> --name "Enrollment Wizard — <change_id>"`, then `uip tm testcases add --test-set-key <KEY> --test-case-keys <...>`
-4. Link each case to the automation: `uip tm testcases link-automation --project-key <KEY> --test-case-key <KEY> --folder-key <FOLDER> --package-name Run-EnrollmentWizard-Test --test-name <name>`
-5. Run the set: `uip tm testsets run --test-set-key <KEY>` — returns an execution ID
-6. Get the report: `uip tm report get --execution-id <ID> --project-key <KEY>`
 
-**Open Test Manager in the browser** after steps 2–3 (see the test cases and test set with linked automation),
-after step 5 (watch live pass/fail per case), and after step 6 (read the persona-tailored report) — don't let
+Behind that one instruction, the agent:
+1. Loads the `uipath-test` skill and verifies authentication
+2. Finds the project and test set, triggers it, then waits: `uip tm wait --execution-id <id> --project-key <KEY> --timeout 540 --output json`
+3. For every failing case, pulls assertion detail (`uip tm testcaselog list-assertions --project-key <KEY> --test-case-log-id <id> --output json`) and run history (`uip tm testcases list-result-history --project-key <KEY> --test-case-id <id> --limit 10 --output json --output-filter "[].{Result: Result, Created: Created}"`) to tell a **chronic defect** (failed repeatedly) apart from a **regression/environment failure** (was passing, now failing — often a browser/selector issue that never actually exercised the test)
+4. Builds a PDF report in its own workspace (not a `uip tm` command — expect an occasional retry if the PDF writer collides with an existing process)
+
+**Report structure to ask for** (this shape held up well in the reference run):
+- A Recommendation banner: **GO** / **NO-GO** / **NO-GO (conditional)**, with a one-paragraph justification
+- Stat tiles: total tests, passed, failed, pass rate, defects + environment blocks
+- A "Failures Blocking the Release" table: test case → type (blocker-functional vs. environment failure) →
+  failure detail → history over the last N runs (chronic / regression risk / no prior history)
+- A full results table (every case, not just failures)
+- A Risk Assessment section in business language (e.g. "a pricing calculation returns a wrong amount — direct
+  monetary-accuracy risk")
+- Conditions to reach GO
+- A provenance footer: source (Test Manager, org/tenant, execution ID), generated-by, and explicitly **"all
+  results taken directly from Test Manager; no results were inferred"** — worth insisting on this line
+  specifically, since it's what makes the report trustworthy for a real sign-off meeting
+
+**Realistic timing:** the full trigger → wait → analyze → report loop took under 10 minutes in the reference run.
+
+**Open Test Manager in the browser** at each real page as you go: **Test Sets** (see the set before triggering),
+**Execution** (watch it run live), and **Dashboard** (results overview, coverage, automation rate) — don't let
 this stay CLI-only.
+
+⚠️ **Still unverified:** turning `test-planner-agent`'s generated scenarios into brand-new Test Manager test
+cases (`uip tm testcases create`, `steps add`, `link-automation` with per-scenario runtime inputs) has not been
+observed working end-to-end — only the trigger/wait/report half above is confirmed against a real run. If your
+workshop pre-creates the test cases/set in Test Manager ahead of time, participants can skip case-creation
+entirely and go straight to this step.
 
 ### 5. Run both sample scenarios end-to-end
 
