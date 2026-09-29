@@ -1,0 +1,6 @@
+{
+  "Name": "Application Testing ILT",
+  "ProjectType": "Tests",
+  "Description": "Support for ILT exercises",
+  "MainFile": "Main.xaml"
+}

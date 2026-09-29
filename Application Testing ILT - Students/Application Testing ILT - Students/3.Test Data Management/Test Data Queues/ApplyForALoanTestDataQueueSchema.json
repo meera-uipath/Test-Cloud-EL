@@ -1,0 +1,28 @@
+{
+  "$id": "https://example.com/person.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Loan Application",
+  "type": "object",
+  "properties": {
+    "Email Id": {
+      "description": "The person's email id.",
+      "type": "string"
+    },
+    "Loan Amount Requested": {
+      "description": "Loan Amount Requested.",
+      "type": "integer"
+    },
+    "Loan Term": {
+      "description": "Loan Term",
+      "type": "integer"
+    },
+    "Current Yearly Income": {
+	    "description": "Current yearly income",
+      "type": "integer"
+    },
+     "Age": {
+	    "description": "Age of the person",
+      "type": "integer"
+    }
+  }
+}

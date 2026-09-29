@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Register For Account",
+  "Type": "Element",
+  "TaxonomyType": "None",
+  "Id": "PcvmfwyGEEqyi3nn7hhgHA",
+  "Reference": "GtvnX6OfOUCtv3dQPEjiDg/PcvmfwyGEEqyi3nn7hhgHA",
+  "ParentRef": "GtvnX6OfOUCtv3dQPEjiDg/VKVL7pn-MEesb9fG1AcuwQ",
+  "Created": "2024-03-10T10:30:35.6749261Z",
+  "Updated": "2024-03-10T10:30:35.6749261Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

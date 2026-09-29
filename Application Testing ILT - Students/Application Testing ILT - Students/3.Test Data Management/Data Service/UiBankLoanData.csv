@@ -1,0 +1,3 @@
+Age,YearlyIncome,EmailId,LoanAmount,LoanTerm,ExpectedRate
+32,20000,email1@uipath.com,10000,10,12
+32,15000,email1@uipath.com,5000,3,9

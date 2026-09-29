@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="e4eITc6jrE2xdjTtDsiMQg" Reference="GtvnX6OfOUCtv3dQPEjiDg/0JF1GVO6uEaKpfLJG6ST8w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://uibank.uipath.com/accounts" ContentHash="3mx7KMW8E0SpdkPljZVtgA" CvTextArea="428, 304, 257, 43" CvTextArgument="Welcome!" CvType="Text" DesignTimeRectangle="432, 298, 365, 58" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Welcome!'" FullSelectorArgument="&lt;webctrl tag='H3' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H3' type='' class='text-white xxx-large' aaname=' Welcome! ' check:innerText='Welcome!' /&gt;" Guid="b4692281-94a4-4d0e-9884-59e380cb8abf" Reference="GtvnX6OfOUCtv3dQPEjiDg/0JF1GVO6uEaKpfLJG6ST8w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="df0b7093e9144c3b35cf36defe405d8a.png" xmlns="">054v1NYlQyEuZvrm3KrUkZQ</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

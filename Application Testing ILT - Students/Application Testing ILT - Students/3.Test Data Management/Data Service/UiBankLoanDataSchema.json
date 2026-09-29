@@ -1,0 +1,138 @@
+{
+  "entities": [
+    {
+      "name": "UiBankLoanData",
+      "displayName": "UiBankLoanData",
+      "entityTypeId": 0,
+      "entityType": "Entity",
+      "description": "",
+      "fields": [
+        {
+          "name": "Age",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isUnique": false,
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "DECIMAL",
+            "lengthLimit": 1000,
+            "maxValue": 1000000000000,
+            "minValue": -1000000000000,
+            "decimalPrecision": 2
+          },
+          "isRequired": false,
+          "displayName": "Age",
+          "description": "",
+          "isSystemField": false,
+          "fieldDisplayType": "Basic",
+          "isAttachment": false,
+          "isRbacEnabled": false
+        },
+        {
+          "name": "YearlyIncome",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isUnique": false,
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "DECIMAL",
+            "lengthLimit": 1000,
+            "maxValue": 1000000000000,
+            "minValue": -1000000000000,
+            "decimalPrecision": 2
+          },
+          "isRequired": false,
+          "displayName": "YearlyIncome",
+          "description": "",
+          "isSystemField": false,
+          "fieldDisplayType": "Basic",
+          "isAttachment": false,
+          "isRbacEnabled": false
+        },
+        {
+          "name": "EmailId",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isUnique": false,
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "NVARCHAR",
+            "lengthLimit": 200
+          },
+          "isRequired": false,
+          "displayName": "EmailId",
+          "description": "",
+          "isSystemField": false,
+          "fieldDisplayType": "Basic",
+          "isAttachment": false,
+          "isRbacEnabled": false
+        },
+        {
+          "name": "LoanAmount",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isUnique": false,
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "DECIMAL",
+            "lengthLimit": 1000,
+            "maxValue": 1000000000000,
+            "minValue": -1000000000000,
+            "decimalPrecision": 2
+          },
+          "isRequired": false,
+          "displayName": "LoanAmount",
+          "description": "",
+          "isSystemField": false,
+          "fieldDisplayType": "Basic",
+          "isAttachment": false,
+          "isRbacEnabled": false
+        },
+        {
+          "name": "LoanTerm",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isUnique": false,
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "DECIMAL",
+            "lengthLimit": 1000,
+            "maxValue": 1000000000000,
+            "minValue": -1000000000000,
+            "decimalPrecision": 2
+          },
+          "isRequired": false,
+          "displayName": "LoanTerm",
+          "description": "",
+          "isSystemField": false,
+          "fieldDisplayType": "Basic",
+          "isAttachment": false,
+          "isRbacEnabled": false
+        },
+        {
+          "name": "ExpectedRate",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isUnique": false,
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "DECIMAL",
+            "lengthLimit": 1000,
+            "maxValue": 1000000000000,
+            "minValue": -1000000000000,
+            "decimalPrecision": 2
+          },
+          "isRequired": false,
+          "displayName": "ExpectedRate",
+          "description": "",
+          "isSystemField": false,
+          "fieldDisplayType": "Basic",
+          "isAttachment": false,
+          "isRbacEnabled": false
+        }
+      ],
+      "isRbacEnabled": false
+    }
+  ],
+  "choicesets": []
+}

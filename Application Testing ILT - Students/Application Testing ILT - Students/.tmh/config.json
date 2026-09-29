@@ -1,0 +1,9 @@
+{
+  "issueKeyTestcaseValues": {},
+  "testManagerBasePath": "https://staging.uipath.com/testcloudilts/MeeraILT_25_26Aug2026/testmanager_",
+  "defaultProject": {
+    "id": "e2c35a71-71e0-0100-ecf1-0b4a0c34a454",
+    "name": "MeeraUiBank",
+    "key": "MKUIB"
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "exportedBy": null,
+  "bundleHash": null,
+  "version": "1.0.0.0",
+  "jitAssemblyCompilerCommands": [
+    {
+      "providerName": "CustomEntities",
+      "bundleOptions": {
+        "hash": "KlF56Q5pSs98ROaFseOu1Ls8MrwOHq4jY6QxAjsYq0lOpydm26BBKqIuIkdS6wNfJybZ5tb9sIwPq+aedrTiDw==",
+        "bundleName": "C7A936B4AB9_Accounts_Retrieve",
+        "entitiesBundle": {
+          "Types": {
+            "Accounts_Retrieve": {
+              "name": "Accounts_Retrieve",
+              "properties": [
+                {
+                  "name": "date",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.DateTimeOffset, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "balance",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Double, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "accountNumber",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Double, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "type",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "sortCode",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "friendlyName",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                }
+              ],
+              "baseType": null
+            }
+          },
+          "version": 1
+        }
+      },
+      "entityAssemblyKey": {
+        "name": "UiPath.IntegrationService.Activities.SWEntities.C7A936B4AB9_Accounts_Retrieve",
+        "hash": "S2xGNTZRNXBTczk4Uk9hRnNlT3UxTHM4TXJ3T0hxNGpZNlF4QWpzWXEwbE9weWRtMjZCQktxSXVJa2RTNndOZkp5Ylo1dGI5c0l3UHErYWVkclRpRHc9PQ",
+        "assemblyName": "C7A936B4AB9_Accounts.FlDsB1amteG1nJADP4y5Q7i2"
+      }
+    },
+    {
+      "providerName": "CustomEntities",
+      "bundleOptions": {
+        "hash": "KNqpVdk+uLHo3YP+YZiE1Pq8vtGX6wAKee+VyMBz61nmsNoX+iygbvezh3cIiCLuasuc1hEPxL4EOMK8bTqrwg==",
+        "bundleName": "C7A936B4AB9_Accounts_List",
+        "entitiesBundle": {
+          "Types": {
+            "Accounts_List": {
+              "name": "Accounts_List",
+              "properties": [
+                {
+                  "name": "date",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.DateTimeOffset, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "balance",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Double, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "accountNumber",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Double, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "type",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "sortCode",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "friendlyName",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                }
+              ],
+              "baseType": null
+            }
+          },
+          "version": 1
+        }
+      },
+      "entityAssemblyKey": {
+        "name": "UiPath.IntegrationService.Activities.SWEntities.C7A936B4AB9_Accounts_List",
+        "hash": "S05xcFZkayt1TEhvM1lQK1laaUUxUHE4dnRHWDZ3QUtlZStWeU1CejYxbm1zTm9YK2l5Z2J2ZXpoM2NJaUNMdWFzdWMxaEVQeEw0RU9NSzhiVHFyd2c9PQ",
+        "assemblyName": "C7A936B4AB9_Accounts.kVyNGl7VjF15oL9Q1pc0lI"
+      }
+    },
+    {
+      "providerName": "CustomEntities",
+      "bundleOptions": {
+        "hash": "ScZ0TOfV/sl3Rgygn45a4MX8QNPDJsEwFtiRV7WK1A69UBnJdH3O6PAxgJDeaFEnyOJGKSX6yYSDs8BB9VVQLA==",
+        "bundleName": "C7A936B4AB9_QuotesNewquote_Create",
+        "entitiesBundle": {
+          "Types": {
+            "QuotesNewquote_Create": {
+              "name": "QuotesNewquote_Create",
+              "properties": [
+                {
+                  "name": "rate",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Double, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "accepted",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "quoteid",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                }
+              ],
+              "baseType": null
+            }
+          },
+          "version": 1
+        }
+      },
+      "entityAssemblyKey": {
+        "name": "UiPath.IntegrationService.Activities.SWEntities.C7A936B4AB9_QuotesNewquote_Create",
+        "hash": "U2NaMFRPZlYvc2wzUmd5Z240NWE0TVg4UU5QREpzRXdGdGlSVjdXSzFBNjlVQm5KZEgzTzZQQXhnSkRlYUZFbnlPSkdLU1g2eVlTRHM4QkI5VlZRTEE9PQ",
+        "assemblyName": "C7A936B4AB9_QuotesNe.8z8TC2GeHlC1gU26MBcxe"
+      }
+    },
+    {
+      "providerName": "CustomEntities",
+      "bundleOptions": {
+        "hash": "ScZ0TOfV/sl3Rgygn45a4MX8QNPDJsEwFtiRV7WK1A69UBnJdH3O6PAxgJDeaFEnyOJGKSX6yYSDs8BB9VVQLA==",
+        "bundleName": "CCCADC469F5_QuotesNewquote_Create",
+        "entitiesBundle": {
+          "Types": {
+            "QuotesNewquote_Create": {
+              "name": "QuotesNewquote_Create",
+              "properties": [
+                {
+                  "name": "rate",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Double, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "accepted",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "quoteid",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                }
+              ],
+              "baseType": null
+            }
+          },
+          "version": 1
+        }
+      },
+      "entityAssemblyKey": {
+        "name": "UiPath.IntegrationService.Activities.SWEntities.CCCADC469F5_QuotesNewquote_Create",
+        "hash": "U2NaMFRPZlYvc2wzUmd5Z240NWE0TVg4UU5QREpzRXdGdGlSVjdXSzFBNjlVQm5KZEgzTzZQQXhnSkRlYUZFbnlPSkdLU1g2eVlTRHM4QkI5VlZRTEE9PQ",
+        "assemblyName": "CCCADC469F5_QuotesNe.pee1js84zN1XJlmW3Htguu3"
+      }
+    }
+  ]
+}

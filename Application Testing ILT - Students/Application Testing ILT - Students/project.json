@@ -1,0 +1,75 @@
+{
+  "name": "Application Testing ILT",
+  "projectId": "e85b3930-9b78-44c6-8bcc-29ed6da257ba",
+  "description": "Support for ILT exercises",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.DataService.Activities": "[25.2.0]",
+    "UiPath.IntegrationService.Activities": "[1.15.0]",
+    "UiPath.System.Activities": "[25.4.4]",
+    "UiPath.Testing.Activities": "[25.4.0]",
+    "UiPath.UIAutomation.Activities": "[25.10.4]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "23.10.0.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Tests",
+    "libraryOptions": {
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "templateType": "ExecutionTemplate",
+        "fileName": ".templates\\Login and Logout.xaml"
+      },
+      {
+        "templateType": "TestCase",
+        "fileName": ".templates\\TCLoginTemplate.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "2a979868-92e4-4128-b69e-b76b014182b5",
+        "testCaseType": "TestCase",
+        "fileName": "Coded Test Cases\\TC_Coded_Login.cs"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "1c338f11-fc10-4d24-b7af-548dbfffd2a4",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "3.Test Data Management\\AI Generated\\Generate Loan Quotes.xaml"
+      }
+    ],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}
